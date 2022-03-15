@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Детектор на Меланома"
+        android:textColor="#dbe1eb"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/buttonstyle"
+        android:src="@drawable/take_pic"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/button_for_galery"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/buttonstyle"
+        android:src="@drawable/upload_img"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+    <ImageButton
+        android:id="@+id/button_for_card"
+        android:layout_width="370sp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/card_button"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/button_for_card_2"
+        android:layout_width="350sp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/card_button"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="370sp"
+        android:layout_height="370sp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/skin_lesion" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/classified"
+        android:layout_below="@+id/imageView"
+        android:textColor="#dbe1eb"
+        android:layout_marginTop="15sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Сликајте ја лезијата\n\n или \n\n Прикачете слика од галерија"
+        android:textColor="#dbe1eb"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/result"
+        android:layout_below="@+id/classified"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confidencesText"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#dbe1eb"
+        android:layout_below="@+id/result"
+        android:layout_marginTop="25sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#dbe1eb"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:id="@+id/confidence"
+        android:layout_below="@+id/confidencesText"
+        />
+
+</RelativeLayout>
